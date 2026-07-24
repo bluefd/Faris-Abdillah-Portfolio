@@ -1,0 +1,728 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Faris Abdillah — Frontend Engineer &amp; UI/UX Designer</title>
+
+  <meta name="description" content="Portfolio of Faris Abdillah, a Frontend Engineer and UI/UX Designer crafting fluid, high-performance web interfaces with modern glassmorphic design and clean code." />
+  <meta name="keywords" content="Faris Abdillah, Frontend Engineer, UI/UX Designer, Web Developer Portfolio, JavaScript Developer, Glassmorphism, Liquid Glass, Web Design" />
+  <meta name="author" content="Faris Abdillah" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#09090B" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Faris Abdillah — Frontend Engineer & UI/UX Designer" />
+  <meta property="og:description" content="Fluid, high-performance web interfaces crafted with modern glassmorphic design and clean code." />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Faris Abdillah — Frontend Engineer & UI/UX Designer" />
+  <meta name="twitter:description" content="Fluid, high-performance web interfaces crafted with modern glassmorphic design and clean code." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ===== SVG Icon Sprite (hidden, referenced via <use>) ===== -->
+  <svg class="icon-sprite" aria-hidden="true" focusable="false" style="display:none">
+
+    <!-- Brand / social -->
+    <symbol id="icon-github" viewBox="0 0 24 24" fill="currentColor">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.833.092-.647.35-1.088.636-1.339-2.221-.253-4.556-1.113-4.556-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.295 2.747-1.026 2.747-1.026.546 1.378.202 2.397.1 2.65.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.31.678.921.678 1.856 0 1.34-.012 2.421-.012 2.751 0 .268.18.58.688.482A10.02 10.02 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+    </symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="3" y="3" width="18" height="18" rx="5"/>
+      <circle cx="8" cy="9" r="1.1" fill="currentColor" stroke="none"/>
+      <path d="M8 12v5M12 12v5M12 14.4c0-1.5 1-2.4 2.3-2.4S16.5 13 16.5 14.4V17" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="3" y="3" width="18" height="18" rx="6"/>
+      <circle cx="12" cy="12" r="4"/>
+      <circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/>
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="2" y="4" width="20" height="16" rx="3"/>
+      <path d="M3 6l9 7 9-7" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+
+    <!-- UI -->
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12h16m-6-6l6 6-6 6"/>
+    </symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M7 17L17 7M8 7h9v9"/>
+    </symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <circle cx="12" cy="12" r="4"/>
+      <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+    </symbol>
+    <symbol id="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+    </symbol>
+    <symbol id="icon-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 19V5M5 12l7-7 7 7"/>
+    </symbol>
+    <symbol id="icon-location" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-6.3 7-11.5A7 7 0 105 9.5C5 14.7 12 21 12 21z"/>
+      <circle cx="12" cy="9.5" r="2.3"/>
+    </symbol>
+    <symbol id="icon-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="7" width="18" height="13" rx="2"/>
+      <path d="M8 7V5a2 2 0 012-2h4a2 2 0 012 2v2"/>
+      <line x1="3" y1="12" x2="21" y2="12"/>
+    </symbol>
+    <symbol id="icon-graduation" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M2 9l10-5 10 5-10 5-10-5z"/>
+      <path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/>
+    </symbol>
+
+    <!-- Skills -->
+    <symbol id="icon-html5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M8 4L3 12l5 8M16 4l5 8-5 8"/>
+    </symbol>
+    <symbol id="icon-css3" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <rect x="4" y="4" width="12" height="12" rx="2"/>
+      <rect x="8" y="8" width="12" height="12" rx="2"/>
+    </symbol>
+    <symbol id="icon-javascript" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 4c-2 0-3 1-3 3v3c0 1-1 2-2 2 1 0 2 1 2 2v3c0 2 1 3 3 3M15 4c2 0 3 1 3 3v3c0 1 1 2 2 2-1 0-2 1-2 2v3c0 2-1 3-3 3"/>
+    </symbol>
+    <symbol id="icon-git" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">
+      <line x1="6" y1="3" x2="6" y2="15"/>
+      <circle cx="6" cy="18" r="3"/>
+      <circle cx="6" cy="6" r="3"/>
+      <circle cx="18" cy="6" r="3"/>
+      <path d="M18 9v2a4 4 0 01-4 4H9"/>
+    </symbol>
+    <symbol id="icon-uiux" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51z"/>
+    </symbol>
+    <symbol id="icon-responsive" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="2" y="4" width="14" height="10" rx="1.5"/>
+      <line x1="6" y1="18" x2="12" y2="18"/>
+      <rect x="17" y="9" width="5" height="9" rx="1"/>
+    </symbol>
+
+    <!-- Projects -->
+    <symbol id="icon-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 17l6-6 4 4 8-8"/>
+      <path d="M15 7h6v6"/>
+    </symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+      <path d="M6 18a4 4 0 01-.6-7.96A5.5 5.5 0 0116.2 9.5 4.5 4.5 0 0117.5 18H6z"/>
+    </symbol>
+    <symbol id="icon-music" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M9 18V5l11-2v13"/>
+      <circle cx="6.5" cy="18.5" r="2.5"/>
+      <circle cx="17.5" cy="16.5" r="2.5"/>
+    </symbol>
+    <symbol id="icon-checklist" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="3" width="14" height="18" rx="2"/>
+      <path d="M9 3h6v2H9z"/>
+      <path d="M8 13l2.5 2.5L16 10"/>
+    </symbol>
+    <symbol id="icon-bag" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+      <path d="M6 8h12l-1 12H7L6 8z"/>
+      <path d="M9 8V6a3 3 0 016 0v2"/>
+    </symbol>
+    <symbol id="icon-grid" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+      <rect x="3" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="3" width="7" height="7" rx="1.5"/>
+      <rect x="3" y="14" width="7" height="7" rx="1.5"/>
+      <rect x="14" y="14" width="7" height="7" rx="1.5"/>
+    </symbol>
+
+    <!-- GitHub stats -->
+    <symbol id="icon-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M3 7a2 2 0 012-2h4l2 2h8a2 2 0 012 2v8a2 2 0 01-2 2H5a2 2 0 01-2-2V7z"/>
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round">
+      <path d="M12 2l2.9 6.4 7 .6-5.3 4.7 1.6 6.9L12 17l-6.2 3.6 1.6-6.9L2.1 9l7-.6L12 2z"/>
+    </symbol>
+    <symbol id="icon-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+      <circle cx="9" cy="8" r="3.2"/>
+      <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+      <path d="M16 8.5a3 3 0 100-5.8M18 20c0-2.8-1.7-5.1-4-5.8"/>
+    </symbol>
+    <symbol id="icon-activity" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12h4l3 8 4-16 3 8h4"/>
+    </symbol>
+  </svg>
+
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <!-- Mouse glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress-bar" id="scrollProgressBar"></div>
+  </div>
+
+  <!-- Animated gradient background -->
+  <div class="bg-gradient-animated" aria-hidden="true">
+    <span class="gradient-blob blob-1"></span>
+    <span class="gradient-blob blob-2"></span>
+    <span class="gradient-blob blob-3"></span>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-container" aria-label="Primary">
+      <a href="#home" class="nav-logo">Faris<span class="dot">.</span></a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to light theme">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-sun"></use></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-moon"></use></svg>
+        </button>
+        <button class="nav-toggle" id="navToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="home" class="hero" aria-label="Introduction">
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="floating-shape shape-1"></span>
+        <span class="floating-shape shape-2"></span>
+        <span class="floating-shape shape-3"></span>
+        <span class="floating-shape shape-4"></span>
+      </div>
+
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="hero-badge" data-reveal="fade-up">
+            <span class="badge-dot" aria-hidden="true"></span>
+            Available for new projects
+          </span>
+
+          <h1 class="hero-title" data-reveal="fade-up" style="--reveal-delay:80ms">
+            Hi, I'm <span class="text-gradient">Faris Abdillah</span>
+          </h1>
+
+          <h2 class="hero-subtitle" data-reveal="fade-up" style="--reveal-delay:160ms">
+            <span class="typing-text" id="typingText"></span><span class="typing-cursor" aria-hidden="true"></span>
+          </h2>
+
+          <p class="hero-description" data-reveal="fade-up" style="--reveal-delay:240ms">
+            I build fluid, high-performance interfaces where thoughtful motion meets clean, maintainable code — turning complex ideas into products that feel effortless to use.
+          </p>
+
+          <div class="hero-cta" data-reveal="fade-up" style="--reveal-delay:320ms">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+            <a href="#contact" class="btn btn-glass"><span>Let's Talk</span></a>
+          </div>
+
+          <div class="hero-socials" data-reveal="fade-up" style="--reveal-delay:400ms">
+            <a href="https://github.com/farisabdillah" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Faris on GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg></a>
+            <a href="https://linkedin.com/in/farisabdillah" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Faris on LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+            <a href="https://instagram.com/faris.dev" class="social-icon" target="_blank" rel="noopener noreferrer" aria-label="Faris on Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+            <a href="mailto:hello@farisabdillah.dev" class="social-icon" aria-label="Email Faris"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-mail"></use></svg></a>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-indicator" aria-label="Scroll to About section">
+        <span class="scroll-indicator-track"><span class="scroll-indicator-dot"></span></span>
+        <span class="scroll-indicator-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section id="about" class="about" aria-label="About Me">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Get to know me</h2>
+          <p class="section-subtitle">A quick look at my background, experience and how I like to work.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-profile" data-reveal="fade-right">
+            <div class="glass-card profile-card">
+              <div class="profile-avatar">
+                <span class="avatar-initials">FA</span>
+                <span class="status-dot" aria-hidden="true"></span>
+              </div>
+              <h3 class="profile-name">Faris Abdillah</h3>
+              <p class="profile-role">Frontend Engineer &amp; UI/UX Designer</p>
+              <p class="profile-location">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-location"></use></svg>
+                Jakarta, Indonesia
+              </p>
+              <div class="profile-mini-stats">
+                <div class="mini-stat"><span class="mini-stat-value">4+</span><span class="mini-stat-label">Years Exp.</span></div>
+                <div class="mini-stat"><span class="mini-stat-value">40+</span><span class="mini-stat-label">Projects</span></div>
+                <div class="mini-stat"><span class="mini-stat-value">30+</span><span class="mini-stat-label">Clients</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content" data-reveal="fade-left">
+            <p class="about-text">I'm a frontend engineer and UI/UX designer based in Jakarta, Indonesia, with four years of experience turning ambitious design ideas into fast, accessible, and delightful web experiences. My work sits at the intersection of design and engineering — I care as much about how an interface feels to use as I do about how clean the code behind it is.</p>
+            <p class="about-text">Over the years I've helped startups and design studios ship dashboards, marketing sites, and product interfaces that balance visual polish with real-world performance. I'm especially drawn to motion design, glassmorphism, and building component systems that scale.</p>
+
+            <div class="about-columns">
+              <div class="about-column">
+                <h3 class="about-column-title"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-briefcase"></use></svg> Experience</h3>
+                <ul class="timeline">
+                  <li class="timeline-item">
+                    <span class="timeline-date">2023 — Present</span>
+                    <h4 class="timeline-title">Senior Frontend Engineer</h4>
+                    <p class="timeline-org">Lumina Studio</p>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-date">2021 — 2023</span>
+                    <h4 class="timeline-title">Frontend Developer</h4>
+                    <p class="timeline-org">Nexora Digital</p>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-date">2020 — 2021</span>
+                    <h4 class="timeline-title">UI/UX Design Intern</h4>
+                    <p class="timeline-org">Studio Kertas</p>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="about-column">
+                <h3 class="about-column-title"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-graduation"></use></svg> Education</h3>
+                <ul class="timeline">
+                  <li class="timeline-item">
+                    <span class="timeline-date">2017 — 2021</span>
+                    <h4 class="timeline-title">B.Sc. Informatics Engineering</h4>
+                    <p class="timeline-org">Institut Teknologi Bandung</p>
+                  </li>
+                  <li class="timeline-item">
+                    <span class="timeline-date">2021</span>
+                    <h4 class="timeline-title">UX Design Professional Certificate</h4>
+                    <p class="timeline-org">Google · Coursera</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="about-tags">
+              <span class="tag-pill">HTML5</span>
+              <span class="tag-pill">CSS3</span>
+              <span class="tag-pill">JavaScript</span>
+              <span class="tag-pill">Git &amp; GitHub</span>
+              <span class="tag-pill">UI/UX Design</span>
+              <span class="tag-pill">Responsive Design</span>
+              <span class="tag-pill">Figma</span>
+              <span class="tag-pill">Motion Design</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="skills" aria-label="Skills">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">Skills</span>
+          <h2 class="section-title">What I work with</h2>
+          <p class="section-subtitle">Tools and technologies I use to design and build modern interfaces.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-html5"></use></svg></div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Semantic, accessible markup</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="95"></div></div>
+            <span class="skill-percent">95%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-css3"></use></svg></div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Modern layouts &amp; animation</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="92"></div></div>
+            <span class="skill-percent">92%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-javascript"></use></svg></div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Interactive, dynamic UI</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="88"></div></div>
+            <span class="skill-percent">88%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-git"></use></svg></div>
+            <h3 class="skill-name">Git</h3>
+            <p class="skill-desc">Version control &amp; branching</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="85"></div></div>
+            <span class="skill-percent">85%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg></div>
+            <h3 class="skill-name">GitHub</h3>
+            <p class="skill-desc">Collaboration &amp; CI workflows</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="87"></div></div>
+            <span class="skill-percent">87%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-uiux"></use></svg></div>
+            <h3 class="skill-name">UI/UX Design</h3>
+            <p class="skill-desc">User-centred design thinking</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="90"></div></div>
+            <span class="skill-percent">90%</span>
+          </div>
+
+          <div class="skill-card glass-card" data-reveal="scale">
+            <div class="skill-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-responsive"></use></svg></div>
+            <h3 class="skill-name">Responsive Design</h3>
+            <p class="skill-desc">Fluid, cross-device layouts</p>
+            <div class="skill-bar"><div class="skill-bar-fill" data-percent="93"></div></div>
+            <span class="skill-percent">93%</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="projects" aria-label="Projects">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">Projects</span>
+          <h2 class="section-title">Selected work</h2>
+          <p class="section-subtitle">A few projects I've designed and built recently.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-1">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-chart"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Aurora Finance live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Aurora Finance</h3>
+              <p class="project-desc">A glassmorphic personal finance dashboard with animated charts, budget tracking and real-time transaction insights.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS3</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">Chart.js</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-2">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-cloud"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Nimbus Weather live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Nimbus Weather</h3>
+              <p class="project-desc">A minimalist weather app with dynamic gradient backgrounds that shift to match real-time conditions and time of day.</p>
+              <div class="project-tech">
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">REST API</span>
+                <span class="tech-chip">CSS3</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-3">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-music"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Pulse Music live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Pulse Music</h3>
+              <p class="project-desc">A concept music player interface with a frosted-glass now-playing panel, animated queue and smooth playback transitions.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS3</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-4">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-checklist"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Orbit Tasks live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Orbit Tasks</h3>
+              <p class="project-desc">A drag-and-drop kanban task manager with local persistence, due-date reminders and weekly productivity insights.</p>
+              <div class="project-tech">
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">CSS Grid</span>
+                <span class="tech-chip">LocalStorage</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 5 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-5">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-bag"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Lumen Store live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Lumen Store</h3>
+              <p class="project-desc">A concept storefront for a lighting brand with tilt-on-hover product cards, micro-interactions and a fluid checkout flow.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">CSS3</span>
+                <span class="tech-chip">JavaScript</span>
+                <span class="tech-chip">GSAP</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 6 -->
+          <article class="project-card glass-card" data-reveal="fade-up">
+            <div class="project-image proj-gradient-6">
+              <svg class="project-icon" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-grid"></use></svg>
+              <div class="project-overlay">
+                <a href="#" class="project-overlay-btn" aria-label="View Verve UI Kit live demo" target="_blank" rel="noopener noreferrer">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg>
+                </a>
+              </div>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Verve UI Kit</h3>
+              <p class="project-desc">A component library of animated, glassmorphic UI elements and landing-page sections built for fast SaaS prototyping.</p>
+              <div class="project-tech">
+                <span class="tech-chip">HTML5</span>
+                <span class="tech-chip">SCSS</span>
+                <span class="tech-chip">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">Live Demo <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-external"></use></svg></a>
+                <a href="#" class="project-link project-link-secondary" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg> GitHub</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GITHUB STATS ============ -->
+    <section id="github-stats" class="github-stats" aria-label="GitHub Statistics">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">GitHub</span>
+          <h2 class="section-title">My open-source footprint</h2>
+          <p class="section-subtitle">A snapshot of my activity and contributions on GitHub.</p>
+        </div>
+
+        <div class="github-panel glass-card" data-reveal="scale">
+          <div class="github-stat">
+            <div class="github-stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-folder"></use></svg></div>
+            <span class="github-stat-value" data-count="48">0</span>
+            <span class="github-stat-label">Total Projects</span>
+          </div>
+          <div class="github-stat">
+            <div class="github-stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-star"></use></svg></div>
+            <span class="github-stat-value" data-count="1200">0</span>
+            <span class="github-stat-label">Stars Earned</span>
+          </div>
+          <div class="github-stat">
+            <div class="github-stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-users"></use></svg></div>
+            <span class="github-stat-value" data-count="860">0</span>
+            <span class="github-stat-label">Followers</span>
+          </div>
+          <div class="github-stat">
+            <div class="github-stat-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-activity"></use></svg></div>
+            <span class="github-stat-value" data-count="2340">0</span>
+            <span class="github-stat-label">Contributions</span>
+          </div>
+        </div>
+
+        <div class="github-cta" data-reveal="fade-up">
+          <a href="https://github.com/farisabdillah" target="_blank" rel="noopener noreferrer" class="btn btn-glass">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg>
+            <span>View GitHub Profile</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="contact" aria-label="Contact">
+      <div class="container">
+        <div class="section-header" data-reveal="fade-up">
+          <span class="section-tag">Contact</span>
+          <h2 class="section-title">Let's build something great</h2>
+          <p class="section-subtitle">Have a project in mind or just want to say hi? My inbox is always open.</p>
+        </div>
+
+        <div class="contact-card glass-card" data-reveal="scale">
+          <div class="contact-intro">
+            <h3>Faris Abdillah</h3>
+            <p>Currently available for freelance projects and full-time opportunities.</p>
+          </div>
+
+          <div class="contact-methods">
+            <a href="mailto:hello@farisabdillah.dev" class="contact-method">
+              <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-mail"></use></svg></span>
+              <span class="contact-method-info">
+                <span class="contact-method-label">Email</span>
+                <span class="contact-method-value">hello@farisabdillah.dev</span>
+              </span>
+              <svg class="contact-method-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+
+            <a href="https://github.com/farisabdillah" class="contact-method" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg></span>
+              <span class="contact-method-info">
+                <span class="contact-method-label">GitHub</span>
+                <span class="contact-method-value">@farisabdillah</span>
+              </span>
+              <svg class="contact-method-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+
+            <a href="https://linkedin.com/in/farisabdillah" class="contact-method" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-linkedin"></use></svg></span>
+              <span class="contact-method-info">
+                <span class="contact-method-label">LinkedIn</span>
+                <span class="contact-method-value">in/farisabdillah</span>
+              </span>
+              <svg class="contact-method-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+
+            <a href="https://instagram.com/faris.dev" class="contact-method" target="_blank" rel="noopener noreferrer">
+              <span class="contact-method-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-instagram"></use></svg></span>
+              <span class="contact-method-info">
+                <span class="contact-method-label">Instagram</span>
+                <span class="contact-method-value">@faris.dev</span>
+              </span>
+              <svg class="contact-method-arrow" viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+            </a>
+          </div>
+
+          <a href="mailto:hello@farisabdillah.dev" class="btn btn-primary contact-cta">
+            <span>Say Hello</span>
+            <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo">Faris<span class="dot">.</span></a>
+        <p class="footer-tagline">Designing fluid, elegant interfaces — one pixel at a time.</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com/farisabdillah" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-github"></use></svg></a>
+        <a href="https://linkedin.com/in/farisabdillah" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-linkedin"></use></svg></a>
+        <a href="https://instagram.com/faris.dev" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="year"></span> Faris Abdillah. All rights reserved.</p>
+        <p>Crafted with care in Jakarta, Indonesia.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="scroll-top" id="scrollTop" type="button" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#icon-arrow-up"></use></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
